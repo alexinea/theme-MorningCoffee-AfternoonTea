@@ -30,13 +30,6 @@
 
 + 评论区域的头像在绝大多数情况下都不能正常加载为博客园头像（故显示的是默认的程序猿头像）
 
-## 关于打赏
-
-啊呀，如果你喜欢我，可以打赏我~
-
-<img src="resource/image/like-alipay.png" width="300" />
-<img src="resource/image/like-wechat.png" width="300" />
-
 ## 关于我
 
 瞬间推荐一个有意思的微信公众号
