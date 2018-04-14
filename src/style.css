@@ -370,6 +370,8 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
   #alex-navigator,#navigatorTitleDiv,#navigatorDiv,.codeCloneBtn,.zclip{display:none;}
   #navigator,#blogTitle,#main,#footer{width:100%;}
   #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }
+  .day{float: none;margin: 15px auto; width: 80%;}
+  .day .postDesc{display: none;}
 }
 @media (max-width: 500px) {
   #alex-navigator,.codeCloneBtn,.zclip{display:none;}
