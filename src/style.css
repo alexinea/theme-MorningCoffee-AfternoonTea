@@ -144,8 +144,9 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #navigatorDiv {position: fixed;top:0;margin-top:40px;left:0;min-width:220px;max-width:300px;height:calc(100% - 40px);background:#FFF;font-size:14px;overflow:auto;overflow-x:hidden;z-index:99;box-shadow:rgba(0, 0, 0, 0.117647) 0px 1px 3px;-moz-box-shadow:rgba(0, 0, 0, 0.117647) 0px 1px 3px;-webkit-box-shadow:rgba(0, 0, 0, 0.117647) 0px 1px 3px;}
 #navigatorDiv ul{margin:5px 15px 10px 0;list-style:none; zoom:1;}
 #navigatorDiv li{font-weight:500!important;padding:0;}
-.anchorLink{border-left:5px solid #DFE1E8;line-height:30px;color:#999!important;padding:0 0 0 15px;width:100%;font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;display:inline-block;}
-.anchorLink:hover,.nav .active .anchorLink{border-left:5px solid #4E5B66;background:#F3F3F3;color:#4E5B66!important;text-decoration:none;}
+.anchorLink{border-left:5px solid #DFE1E8;line-height:30px;color:#999!important;padding:0 0 0 15px;width:100%;display:inline-block;}
+.anchorLink:hover{border-left:5px solid #4E5B66;background:#F3F3F3;color:#4E5B66!important;text-decoration:none;}
+.nav .active .anchorLink{border-left:5px solid #4E5B66;background:#4E5B66;color:#FFF!important;text-decoration:none;}
 
 /*Head Top*/
 #alex-top{display: none;}
@@ -202,7 +203,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 
 /*Single Post or Home Post Desc*/
 .post{padding: 32px 30px 10px 30px;}
-.post .postTitle{ padding-bottom:15px; border-bottom:1px #AAA solid; color:#111; font-size:35px; font-weight:600;line-height:45px;}
+.post .postTitle{margin-top: 30px; padding-bottom:15px; font-size:2rem; font-weight:200; text-align: center;}
 .post .postDesc{display: none;}
 .postBody h1,.postCon h1{font-size:20px;padding:12px 0;}
 .postBody h2,.postCon h2{font-size:19px;padding:5px 10px;}
@@ -371,13 +372,13 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
   #navigator,#blogTitle,#main,#footer{width:100%;}
   #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }
   .day{float: none;margin: 15px auto; width: 80%;}
-  .day .postDesc{display: none;}
 }
 @media (max-width: 500px) {
   #alex-navigator,.codeCloneBtn,.zclip{display:none;}
   #navigator,#blogTitle,#main,#footer{width:100%;}
   #MySignature{overflow-x:hidden;}
   .post .postTitle{font-size:25px;line-height:40px;}
+  .day .postDesc{display: none;}
   #cnblogs_post_body hr{margin:50px 0;}
   #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }
 }
