@@ -54,7 +54,7 @@ function CreateCommentHead(){
       headUrl = $(headNode[0]).text();
     }
     console.log = headUrl;
-    $(val).css({'background': '#FFF url(' + headUrl + ') no-repeat 5px 25px','background-size': '50px'});
+    $(val).css({'background': '#FFF url(' + headUrl + ') no-repeat 10px 25px','background-size': '50px'});
   });
   console.log = 'done';
 }
