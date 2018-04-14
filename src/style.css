@@ -233,7 +233,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #cnblogs_post_body li li li{list-style-type:square;}
 #cnblogs_post_body dt,.postCon dt{ font-weight:bold; padding:6px 0; clear:both}
 #cnblogs_post_body ol,.postCon ol{list-style:none;margin:30px auto 30px 20px;padding-left:0;}
-#cnblogs_post_body blockquote,.postCon blockquote{width:90%;background:#F3E9C7;border:1px solid #E0DAAB;border-radius:3px;-moz-border-radius:3px;-web-kit-border-radius:3px;padding:10px 30px;margin:20px 0;color:#666;}
+#cnblogs_post_body blockquote,.postCon blockquote{background:#F3E9C7;border:1px solid #E0DAAB;border-radius:3px;-moz-border-radius:3px;-web-kit-border-radius:3px;padding:10px 30px;margin:20px 0;color:#666;}
 #cnblogs_post_body blockquote a,.postCon blockquote a{color:#BF7862;}
 #cnblogs_post_body blockquote a:hover,.postCon blockquote a:hover{border-bottom-color:#BF7862; }
 #cnblogs_post_body p{margin:30px auto;line-height:2;}
@@ -390,7 +390,8 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 #like, #like-mask{position: fixed;width: 100%;height: 100%;top: 0;left: 0;}
 #like-title{padding:20px 40px;font-size: 1.4rem;}
 #like-thankyou::before{content: "\2715"; float: right;}
-#like-container{ animation:slide-down .2s ease 1; background: #FFF; max-width:640px;width:100%; border-radius:.2rem; box-shadow: 0 0.2rem 0.5rem rgba(51,51,51,.3); z-index: 122;}
+#like-container{background: #FFF; max-width:640px;width:100%; border-radius:.2rem; box-shadow: 0 0.2rem 0.5rem rgba(51,51,51,.3); z-index: 122;}
 #like-body{padding:20px;}
-#like .half{ margin: 10px; ;width:45%; display: inline-block;}
-#like img{width:100%;}
+#like-body-main{display: flex;margin-left: -.4rem;margin-right: -.4rem;}
+#like .half{ margin: 10px; width:50%; display: inline-block;}
+#like img{width:100%; display: block; height: auto;}
