@@ -207,13 +207,17 @@ function startCollect(){
 function loadMySignature(){
     if(isHome())return;
     var url = getBlogUrl();
-    var signature = '本文发表于博客园《行者自若的技术笔记》，作者为Forerunner（Alex-LEWIS/行者自若）<br />';
+    var signature = '本文发表于博客园《行者自若的技术笔记》，作者为 Forerunner（Alex-LEWIS/行者自若）<br />';
     signature += '作者博客：<a id="alex-blog-url" href="https://alexinea.com" target="_blank">https://alexinea.com</a><br />';
     signature += '本文地址：<a id="alex-post-url" href="'+url+'" target="_blank">'+url+'</a><br />';
     signature += '本文原创授权为：署名 - 非商业性使用 - 禁止演绎，';
     signature += '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" alt="协议普通文本" title="协议普通文本" target="_blank">协议普通文本</a> | <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" alt="协议法律文本" title="协议法律文本" target="_blank">协议法律文本</a><br />';
-    signature += '<img src="http://cnblogs.images.alexinea.com/wechat-mp.png" title="AlexTalk" alt="AlexTalk">';
     $("#MySignature").html(signature).show();
+    
+    var qrAndLikes = '<div id="alex-post-like"><a href="#like">赞赏</a></div>';
+    qrAndLikes += '<div id="alex-qr-wrapper"><img id="alexinea-talk-qr" src="http://cnblogs.images.alexinea.com/wechat-mp.png" title="Alexinea Talk" alt="Alexinea Talk" /></div>';
+
+    $("#EntryTag").after(qrAndLikes);
 }
 
 /* 推荐本文

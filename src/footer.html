@@ -33,5 +33,7 @@
     if(isHome()){
       $('#alex-opt-vote,#alex-opt-follow,#alex-opter-collect').hide();
     }
+    $('#alex-post-like a').click(function(){$('#like, #like-container').fadeIn();});
+    $('#like-thankyou, #like-mask').click(function(){$('#like, #like-container').fadeOut();});
   });
 </script>
