@@ -239,11 +239,14 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #cnblogs_post_body blockquote a:hover,.postCon blockquote a:hover{border-bottom-color:#BF7862; }
 #cnblogs_post_body p{margin:30px auto;line-height:2;}
 #cnblogs_post_body img{max-width:760px;}
+#cnblogs_post_body p:first-child img{margin:0 -3rem;width:calc(100% + 6rem);max-width:none;}
 #cnblogs_post_body hr{height:1px;border:none;border-top:1px solid #CCC;margin:50px 250px;}
 #cnblogs_post_body code{background:hsl(220, 23%, 95%)!important;border:1px solid hsl(220, 23%, 95%)!important;border-radius:3px!important;-moz-border-radius:3px!important;-web-kit-border-radius:3px!important;}
 #cnblogs_post_body p code,#cnblogs_post_body li code,#cnblogs_post_body table code{margin:auto 2px;color:#c7254e;font-family:"Source Code Pro",'webfont',"Microsoft YaHei",微软雅黑,Consolas!important;font-size:0.93em!important;vertical-align:middle;}
 #cnblogs_post_body pre code{padding:10px 20px!important;margin:20px 0;overflow-x:auto;max-height:270px;font-size: .8rem!important;font-family:"Source Code Pro","Microsoft YaHei",微软雅黑,Consolas!important;}
 #EntryTag,#BlogPostCategory,#post_next_prev{font-size:14px;border-radius:3px;-moz-border-radius:3px;-web-kit-border-radius:3px;padding:8px 20px;}
+#EntryTag a,#BlogPostCategory a {padding: 7px 10px; border-radius: .2rem; background: #f0f1f4; color: #5b657a;}
+#EntryTag a:hover,#BlogPostCategory a:hover{background:rgba(1,69,221,.05);color:#013dc4;}
 #post_next_prev{margin-bottom:40px;}
 .codeCloneBtn{position: relative;float: right;background:#4E5B66;padding: 0 15px;margin:-10px 20px -60px 0;font-size:10px;font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
   border-radius:3px;-moz-border-radius:3px;-web-kit-border-radius:3px;color:#FFF;display: inline-block;}
@@ -276,26 +279,23 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 .bq_post_comment{border:none;font-size:16px;color:#666;}
 
 /*Commont Submit*/
-#comment_form{padding:20px 32px;}
+#comment_form{width:100%;}
 .commentbox_title_left,#commentform_title{display:none;}
 .commentbox_title_right{float:none;}
 .commentbox_title_right img{margin:0;}
 #tbCommentBody{
-    width:740px;
+    width:100%;
     height:200px;
-    padding:10px;
+    padding:.35rem .4rem;
     border:1px solid #CCC;
+    border-radius: .2rem;
     color:#666;
     font-size:16px;
-    /*font-family:'webfont',"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;*/
+    transition: all .2s ease;
     resize:none;
 }
-#tbCommentAuthor{
-    background:#FFF;
-    margin:-20px 0 -10px 0;
-    border:none;
-    padding:4px 10px;
-}
+#tbCommentBody:focus{border-color: #0145dd;box-shadow: 0 0 0 0.1rem rgba(1,69,221,.2);}
+#tbCommentAuthor{background:transparent; border:none; padding:4px 10px;}
 #commentbox_opt{font-size:15px;}
 #btn_comment_submit{
     width:100px;
@@ -368,12 +368,16 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 
 .cnblogs_code_toolbar {margin-top: 0px;}
 .cnblogs_code img{margin:0;float:left;}
+
 @media (max-width: 800px) {
   #alex-navigator,#navigatorTitleDiv,#navigatorDiv,.codeCloneBtn,.zclip{display:none;}
-  #navigator,#blogTitle,#main,#footer{width:100%;}
-  #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }
+  #navigator,#blogTitle,#main,#footer{width:100%;}  
   .day{float: none;margin: 15px auto; width: 80%;}
+  .post{padding: 0;}
+  #cnblogs_post_body img{max-width:760px!important;height: auto;width: auto\9; width:100%; }
+  #cnblogs_post_body p:first-child img{margin:0;width:100%;}
 }
+
 @media (max-width: 500px) {
   #alex-navigator,.codeCloneBtn,.zclip{display:none;}
   #navigator,#blogTitle,#main,#footer{width:100%;}
@@ -381,7 +385,7 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
   .post .postTitle{font-size:25px;line-height:40px;}
   .day .postDesc{display: none;}
   #cnblogs_post_body hr{margin:50px 0;}
-  #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }
+  #cnblogs_post_body img{max-width:760px;height: auto;width: auto\9; width:100%; }  
 }
 
 /* Alexinea Talk and likes*/
@@ -392,7 +396,7 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 #like{z-index: 120;display: flex; justify-content: center;align-items: center;}
 #like-mask{background: rgba(247,248,250,.75);z-index:121;display: block;cursor: default;}
 #like, #like-mask{position: fixed;width: 100%;height: 100%;top: 0;left: 0;}
-#like-title{padding:20px 40px;font-size: 1.4rem;}
+#like-title{padding:20px 20px 0 20px;font-size: 1.4rem;}
 #like-thankyou::before{content: "\2715"; float: right;}
 #like-container{background: #FFF; max-width:640px;width:100%; border-radius:.2rem; box-shadow: 0 0.2rem 0.5rem rgba(51,51,51,.3); z-index: 122;}
 #like-body{padding:20px;}
