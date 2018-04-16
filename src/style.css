@@ -263,7 +263,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #div_digg .buryit .burynum{color:#CCC;font-size:15px;line-height:35px!important;display:inline-block;}
 
 /*Commont List*/
-#blog-comments-placeholder{padding:0;}
+#blog-comments-placeholder{padding:0;width:100%;}
 #blog-comments-placeholder>br:first-of-type,.sendMsg2This{display:none;}
 #divRefreshComments,.commentform,#AjaxHolder_UpdatePanel1{padding: 0 32px;}
 .comment_actions{position:relative;float:right;margin:15px 10px 0 0;font-size:15px;}
