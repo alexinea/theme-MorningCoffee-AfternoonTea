@@ -226,7 +226,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #cnblogs_post_body ol>li>ul>li{list-style-type:circle;}
 #cnblogs_post_body ul{margin:30px auto 30px 25px;}
 #cnblogs_post_body ul>li>ul{margin:0 0 0 25px;}
-#cnblogs_post_body li{list-style:disc;}
+#cnblogs_post_body li{list-style:disc;font-weight: 500;}
 #cnblogs_post_body li li{list-style-type:circle;}
 #cnblogs_post_body li li li{list-style-type:square;}
 #cnblogs_post_body dt,.postCon dt{ font-weight:bold; padding:6px 0; clear:both}
@@ -234,7 +234,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #cnblogs_post_body blockquote,.postCon blockquote{background:#eff1f5;border:1px solid #e1e4ea;border-radius:3px;padding:25px;margin:20px 0;}
 #cnblogs_post_body blockquote a,.postCon blockquote a{color:#4E5B66;}
 #cnblogs_post_body blockquote a:hover,.postCon blockquote a:hover{border-bottom-color:#4E5B66; }
-#cnblogs_post_body p{margin:1.2rem 0;line-height:1.8;}
+#cnblogs_post_body p{margin:1.2rem 0;line-height:1.8;font-weight: 500;}
 #cnblogs_post_body blockquote p{margin: 0 auto;}
 #cnblogs_post_body img{max-width:760px;}
 #cnblogs_post_body p:first-child img{margin:0 -3rem;width:calc(100% + 6rem);max-width:none;}
@@ -365,22 +365,28 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 .cnblogs_code_toolbar {margin-top: 0px;}
 .cnblogs_code img{margin:0;float:left;}
 
-@media(max-width: 1366px){
+@media(max-width: 1500px){
   #navigatorDiv{display:none;}
 }
 
+@media(max-width: 1200px){
+  .alex-n-right{display: none;}
+}
+
+@media(max-width: 900px){
+  #cnblogs_post_body p:first-child img{margin:0;width:100%;}
+  #alex-navigator{display: none;}
+}
+
 @media (max-width: 800px) {
-  #alex-navigator,#navigatorTitleDiv,#navigatorDiv,.codeCloneBtn,.zclip{display:none;}
+  #navigatorTitleDiv,#navigatorDiv,.codeCloneBtn,.zclip{display:none;}
   #navigator,#blogTitle,#main,#footer{width:100%;}  
   .day{float: none;margin: 15px auto; width: 80%;}
   .post{padding: 0;}
-  #cnblogs_post_body img{max-width:760px!important;height: auto;width: auto\9; width:100%; }
-  #cnblogs_post_body p:first-child img{margin:0;width:100%;}
+  #cnblogs_post_body img{max-width:100%!important;height: auto;width: auto\9; }
 }
 
 @media (max-width: 500px) {
-  #alex-navigator,.codeCloneBtn,.zclip{display:none;}
-  #navigator,#blogTitle,#main,#footer{width:100%;}
   #MySignature{overflow-x:hidden;}
   .post .postTitle{font-size:25px;line-height:40px;}
   .day .postDesc{display: none;}
