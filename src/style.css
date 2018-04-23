@@ -275,6 +275,11 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 .login_tips{background:#EFEFEF; margin:10px 0;padding:10px 25px;}
 .louzhu{color:#F00;padding:0 5px;}
 .bq_post_comment{border:none;font-size:16px;color:#666;}
+#comments_pager_top{margin-bottom: 30px;}
+#comments_pager_bottom{margin-top: 30px;}
+.pager a{padding: 7px 10px;margin: 0 2.5px; border-radius: .2rem;background:#f0f1f4; border:1px solid #f0f1f4; }
+.paper a:hover{background: rgba(1,69,221,.05);color:#013dc4;}
+.pager span.current{padding: 7px 10px;margin: 0 2.5px; border-radius: .2rem;background:#0145dd;border:1px solid #0140ce;color:#FFF;}
 
 /*Commont Submit*/
 #comment_form{width:100%;}
@@ -297,16 +302,13 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #commentbox_opt{font-size:15px;}
 #btn_comment_submit{
     width:100px;
-    height:26px;
-    background:#AAA;
+    background:#0145dd;
+    border:1px solid #0140ce;
+    border-radius:.2rem;
     color:#FFF;
-    border:none;
-    border-radius:3px;
     cursor: pointer;
 }
-#btn_comment_submit:hover{
-    background:#4E5B66;
-}
+#btn_comment_submit:hover{background: #013dc4; border-color: #0138b4;}
 
 /*Sign*/
 #MySignature{
@@ -388,7 +390,8 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 
 /* Alexinea Talk and likes*/
 #alex-post-like{margin-top: 4rem ;text-align: center;}
-#alex-post-like a{padding: .45rem .6rem; background: #4E5B66; border-radius: .2rem; color: #FFF; font-size: 1.2rem;}
+#alex-post-like a{padding: .45rem .6rem; background: #0145dd; border-color: #0140ce; border-radius: .2rem; color: #FFF; font-size: 1.2rem;}
+#alex-post-like a:hover{background: #013dc4; border-color: #0138b4;}
 #alex-qr-wrapper{text-align: center;}
 
 #like{z-index: 120;display: flex; justify-content: center;align-items: center;}
