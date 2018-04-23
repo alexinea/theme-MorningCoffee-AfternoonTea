@@ -90,6 +90,7 @@ function CreatePostNavigator(){
   navigatorDivContent += pinglunItem;
   navigatorDivContent += '</ul></div>';
      
+  var fixedOffset = 45;
   $('#main').append(navigatorDivContent);
   $('#main').append(navigatorTitleDiv);
   $('#navigatorTitleDiv').click(function(){
@@ -99,14 +100,14 @@ function CreatePostNavigator(){
     var obj = $(this);
     var href = '#s_' + $(obj).attr('id');
     var pos = '#s_nav_pinglun' == href 
-      ? $('#blog-comments-placeholder').offset().top - 45
+      ? $('#blog-comments-placeholder').offset().top - fixedOffset
       : '#s_nav_header' == href
         ? 0
-        : $(href).offset().top - 45;
+        : $(href).offset().top - fixedOffset;
     $('html, body').animate({scrollTop: pos}, 2000, 'swing');
   });
      
-  $('body').scrollspy({ target: '#navigatorDiv', offset: 45});
+  $('body').scrollspy({ target: '#navigatorDiv', offset: fixedOffset + 15});
 }
 
 /* 代码复制
