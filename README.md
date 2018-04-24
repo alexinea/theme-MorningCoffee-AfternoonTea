@@ -1,4 +1,6 @@
 # theme-MorningCoffee-AfternoonTea
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falexinea%2Ftheme-MorningCoffee-AfternoonTea.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falexinea%2Ftheme-MorningCoffee-AfternoonTea?ref=badge_shield)
+
 
 博客园扩展主题 MorningCoffee&amp;AfternoonTea
 
@@ -46,3 +48,6 @@
 ## 许可
 
 Apache-2.0
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falexinea%2Ftheme-MorningCoffee-AfternoonTea.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falexinea%2Ftheme-MorningCoffee-AfternoonTea?ref=badge_large)
