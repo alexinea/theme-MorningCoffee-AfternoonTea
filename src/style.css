@@ -374,6 +374,9 @@ footer{padding: 40px; text-align: center; line-height: 21px; color: #bfc3c8;}
 }
 
 @media(max-width: 900px){
+  *,*::before,*::after{box-sizing: border-box;}
+  body{overflow-x:hidden;}
+  #main #post_detail{width:100%;}
   #cnblogs_post_body p:first-child img{margin:0;width:100%;}
   #alex-navigator{display: none;}
 }
