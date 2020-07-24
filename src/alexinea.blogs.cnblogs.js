@@ -145,7 +145,7 @@ function cloneCodeSuccess(){
 }
 
 /* 关注
- * Alex-LEWIS, 2020-01-10
+ * Alex-LEWIS, 2016-01-10
  * */
 function setFollowStatus(fwState){
     if(fwState){
@@ -160,7 +160,7 @@ function startFollow(){
 
     var n = cb_blogUserGuid;
     $.ajax({
-      url: "/" + currentBlogApp + "/ajax/Follow/FollowBlogger.aspx",
+      url: "/mvc/Follow/FollowBlogger.aspx",
       data: '{"blogUserGuid":"' + n + '"}',
       dataType: "text",
       type: "post",
@@ -222,12 +222,12 @@ function loadMySignature(){
 }
 
 /* 推荐本文
- * Alex-LEWIS, 2020-01-10
+ * Alex-LEWIS, 2016-01-10
  * */
 function likeThisPost(){
-   var r = { postId: cb_entryId, voteType: 'Digg', isAbandoned: false };
+   var r = { blogApp: currentBlogApp, postId: cb_entryId, voteType: 'Digg', isAbandoned: false };
    $.ajax({
-      url: "/" + currentBlogApp + "/ajax/vote/blogpost",
+      url: "/mvc/vote/VoteBlogPost.aspx",
       type: "post",
       dataType: "json",
       contentType: "application/json; charset=utf-8",

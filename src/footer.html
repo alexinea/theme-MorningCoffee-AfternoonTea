@@ -1,40 +1,53 @@
 <footer>
-<section class="copyright">© 2007 - 2018 Alexinea's Blog Technology Channel 保留一切权利</section>
-<section class="copyright">Proudly published by <a href="https://alexinea.com" target="_blank">AlexLEWIS</a>. Theme <a href="https://github.com/alexinea/theme-MorningCoffee-AfternoonTea" title="Theme at GitHub" target="_blank">MorningCoffee&amp;AfternoonTea</a> made with <span  class="red">♥</span>.</section>
-<section class="copyright">Service provided by <a href="https://www.cnblogs.com" target="_blank">博客园 cnblogs.com </a>, so much thanks.</section>
-</footer>
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
-<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="http://files.cnblogs.com/files/%你的博客园地址别名%/jquery.zclip.min.js" type="text/javascript"></script>  
-<script src="http://files.cnblogs.com/files/%你的博客园地址别名%/jquery.scrollUnique.js" type="text/javascript"></script>  
-<script src="http://files.cnblogs.com/files/%你的博客园地址别名%/alexinea.blogs.cnblogs.js" type="text/javascript"></script>  
-<script>
-  //OnLoad
-  jQuery(function($){ 
-    CreatePostNavigator();//侧边栏
-    createCloneCodeBtn(); //复制代码
-    CreateCommentHead();  //评论头像
-    setFollowStatus(hasFollowed());
-    loadMySignature();
-    $('#alex-opt-follow').click(function(){hasFollowed()?removeFollow():startFollow();});
-    $('#alex-opt-vote').click(function(){likeThisPost();}); 
-    $('#alex-top').click(function(){$('html, body').animate({scrollTop: 0}, 2000, 'swing');});
-    $('#navigatorDiv').scrollUnique();  
-    $('#alex-opt-share, #alex-opt-share-title, #alex-opt-share ul').on({
-      'mouseover': function(){$('#alex-opt-share ul').show();$('#alex-opt-share').css({'background':'#4E5B66','color':'#FFF'});},
-      'mouseout':  function(){$('#alex-opt-share ul').hide();$('#alex-opt-share').css({'background':'#FFFFFF','color':'#666'});}
-      });
-    $('#alex-opter-shareWeiBo').click(function(){ShareToTsina();});
-    $('#alex-opter-shareWeChat').click(function(){shareOnWechat();});
-    $('#alex-opter-shareDouban').click(function(){shareToDouban();});
-    $('#alex-opter-shareQQ').click(function(){shareToQQ();});
-    $('#alex-opter-shareQQZone').click(function(){shareToQQZone();});
-    $('#alex-opter-collect').click(function(){startCollect();});
-    $('#alex-opter-messageMe').click(function(){open_link('http://msg.cnblogs.com/send/%你的博客园地址别名%');});
-    if(isHome()){
-      $('#alex-opt-vote,#alex-opt-follow,#alex-opter-collect').hide();
-    }
-    $('#alex-post-like a').click(function(){$('#like, #like-container').fadeIn();});
-    $('#like-thankyou, #like-mask').click(function(){$('#like, #like-container').fadeOut();});
-  });
-</script>
+  <section class="copyright">© 2007 - 2020 Alexinea's Blog Technology Channel 保留一切权利</section>
+  <section class="copyright">Proudly published by <a href="https://alexinea.com" target="_blank">AlexLEWIS</a>. Theme <a href="https://github.com/alexinea/theme-MorningCoffee-AfternoonTea" title="Theme at GitHub" target="_blank">MorningCoffee&amp;AfternoonTea</a> made with <span  class="red">♥</span>.</section>
+  <section class="copyright">Service provided by <a href="https://www.cnblogs.com" target="_blank">博客园 cnblogs.com </a>, so many thanks.</section>
+  </footer>
+  <script src="http://files.cnblogs.com/files/forerunner/jquery.min.js" type="text/javascript"></script>
+  <script src="http://files.cnblogs.com/files/forerunner/bootstrap.min.js" type="text/javascript"></script>
+  <script src="http://files.cnblogs.com/files/forerunner/jquery.zclip.min.js" type="text/javascript"></script>  
+  <script src="http://files.cnblogs.com/files/forerunner/jquery.scrollUnique.js" type="text/javascript"></script>  
+  <script src="http://files.cnblogs.com/files/forerunner/alexinea.blogs.cnblogs.js" type="text/javascript"></script>  
+  <script>
+    //OnLoad
+    jQuery(function($){ 
+      CreatePostNavigator();//侧边栏
+      createCloneCodeBtn(); //复制代码
+      CreateCommentHead();  //评论头像
+      setFollowStatus(hasFollowed());
+      loadMySignature();
+      $('#alex-opt-follow').click(function(){hasFollowed()?removeFollow():startFollow();});
+      $('#alex-opt-vote').click(function(){likeThisPost();}); 
+      $('#alex-top').click(function(){$('html, body').animate({scrollTop: 0}, 2000, 'swing');});
+      $('#navigatorDiv').scrollUnique();  
+      var mo1 = 'mou' + 'seover';
+      var mo2 = 'mou' + 'seout';
+      var mo3 = $('#alex-opt-share, #alex-opt-share-title, #alex-opt-share ul')['o' + 'n'];
+      mo3({
+        'mouseover': function(){$('#alex-opt-share ul').show();$('#alex-opt-share').css({'background':'#4E5B66','color':'#FFF'});},
+        'mouseout':  function(){$('#alex-opt-share ul').hide();$('#alex-opt-share').css({'background':'#FFFFFF','color':'#666'});}
+        });
+      $('#alex-opter-shareWeiBo').click(function(){ShareToTsina();});
+      $('#alex-opter-shareWeChat').click(function(){shareOnWechat();});
+      $('#alex-opter-shareDouban').click(function(){shareToDouban();});
+      $('#alex-opter-shareQQ').click(function(){shareToQQ();});
+      $('#alex-opter-shareQQZone').click(function(){shareToQQZone();});
+      $('#alex-opter-collect').click(function(){startCollect();});
+      $('#alex-opter-messageMe').click(function(){open_link('http://msg.cnblogs.com/send/Forerunner');});
+      if(isHome()){
+        $('#alex-opt-vote,#alex-opt-follow,#alex-opter-collect').hide();
+      }
+      $('#alex-post-like a').click(function(){$('#like, #like-container').fadeIn();});
+      $('#like-thankyou, #like-mask').click(function(){$('#like, #like-container').fadeOut();});
+    });
+  </script>
+  <script>
+    //Baidu
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2a70eed48d31f90c9e89a1854bc3708f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>

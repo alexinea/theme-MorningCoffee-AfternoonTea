@@ -209,7 +209,7 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 .postBody h5,.postCon h5{font-size:14px;padding:5px 25px;}
 .postBody h6,.postCon h6{font-size:14px;padding:5px 25px;}
 .postCon h1, .postCon h2, .postCon h3, .postCon h4, .postCon h5, .postCon h6{font-weight:bold;}
-.postBody,.postCon,.entrylistPostSummary{clear:both; margin-top:26px;font-size:16px;color:#414857;}
+.postBody,.postCon,.entrylistPostSummary{clear:both; margin-top:26px;font-size:16px;color:#27282d;}
 #cnblogs_post_body a{text-decoration:none;color:#4B6F89;}
 #cnblogs_post_body a:hover{border-bottom:2px solid #4B6F89;padding-bottom:2px;}
 #cnblogs_post_body table{margin:30px 0;}
@@ -231,11 +231,11 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 #cnblogs_post_body li li li{list-style-type:square;}
 #cnblogs_post_body dt,.postCon dt{ font-weight:bold; padding:6px 0; clear:both}
 #cnblogs_post_body ol,.postCon ol{list-style:none;margin:30px auto 30px 20px;padding-left:0;}
-#cnblogs_post_body blockquote,.postCon blockquote{background:#eff1f5;border:1px solid #e1e4ea;border-radius:3px;padding:25px;margin:20px 0;}
+#cnblogs_post_body blockquote,.postCon blockquote{background:#f4f4f4;border:none;padding:25px 30px;margin:20px 0;}
 #cnblogs_post_body blockquote a,.postCon blockquote a{color:#4E5B66;}
 #cnblogs_post_body blockquote a:hover,.postCon blockquote a:hover{border-bottom-color:#4E5B66; }
 #cnblogs_post_body p{margin:1.2rem 0;line-height:1.8;font-weight: 500;}
-#cnblogs_post_body blockquote p{margin: 0 auto;}
+#cnblogs_post_body blockquote p{margin: 0 auto;color:#27282d;}
 #cnblogs_post_body img{max-width:760px;}
 #cnblogs_post_body p:first-child img{margin:0 -3rem;width:calc(100% + 6rem);max-width:none;}
 #cnblogs_post_body hr{height:1px;border:none;border-top:1px solid #CCC;margin:50px 250px;}
@@ -312,17 +312,15 @@ article, aside, dialog, footer, header, hground, section, footer, nav, figure, m
 
 /*Sign*/
 #MySignature{
-  background:hsl(220, 23%, 95%)!important;
-  padding:25px;
-  border:1px solid hsl(220, 16%, 90%)!important;
-  border-radius:3px;
+  background: #f4f4f4;
+  padding:25px 30px;
   font-size:16px;
 }
 #MySignature a{
   padding-left:5px;
   padding-right:5px;
   text-decoration:none;
-  color:#4E5B66;
+  color:#27282D;
 }
 #MySignature a:hover{
   border-bottom:2px solid #4E5B66;
